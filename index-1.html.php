@@ -2,6 +2,11 @@
 <html lang="en">
 <!--==============================PHP VARIABLES=================================-->
 <?php
+$navB1 = "Inicio";
+$navB2 = "Historia";
+$navB3 = "Recetas";
+$navB4 = "Decoraciones";
+
 $historiatxt = "El término Halloween proviene de la contracción inglesa: All Hallows’ Eve, cuyo significado se
 refiere a la víspera de Todos los Santos o la Víspera de los Difuntos.
 En la tradición celta, la víspera del 1 de noviembre era conocida como el festival del Samhain,
@@ -134,10 +139,10 @@ tenido gran aceptación sobre todo en las familias con niños pequeños.";
                         <!--==============================NAVEGATION BAR==============================-->
                         <nav class="">
                             <ul class="sf-menu">
-                                <li><a href="index.html.php">Inicio</a></li>
-                                <li class="current"><a href="index-1.html.php">Historia</a></li>
-                                <li><a href="index-2.html.php">Recetas</a></li>
-                                <li><a href="index-4.html.php">Decoraciones</a></li>
+                                <li class="current"><a href="index.html.php"><?php echo $navB1;?></a></li>
+                                <li><a href="index-1.html.php"><?php echo $navB2;?></a></li>
+                                <li><a href="index-2.html.php"><?php echo $navB3;?></a></li>
+                                <li><a href="index-4.html.php"><?php echo $navB4;?></a></li>
                             </ul>
                         </nav>
                         <form id="search" action="search.php" method="GET">
