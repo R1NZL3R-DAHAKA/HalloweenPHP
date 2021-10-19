@@ -7,7 +7,7 @@ $navB2 = "Historia";
 $navB3 = "Recetas";
 $navB4 = "Decoraciones";
 
-  $decoraciones = array(
+  $decoraciones = (object)[
     "Velas" => "Las velas Halloween son uno de los
     elementos decorativos más versátiles que hay y elaborarlas en casa te permite personalizarlas a
     tu gusto. Se pueden hacer en forma de calabaza, sangrientas, de calavera… ¡Hay multitud de
@@ -19,7 +19,7 @@ $navB4 = "Decoraciones";
 
     "Calabazas"=>"Coge una bandeja grande y coloca en ellas varias calabazas
     pequeñas. Pon también piñas y velas y ya tendrás un original centro de mesa perfecto para Halloween.",
-  );
+  ];
 ?>
 
 <head>
@@ -165,19 +165,19 @@ $navB4 = "Decoraciones";
                     <div class="block2">
                         <img src="images/page5_img1.jpg" alt="" class="img_inner i1">
                         <div class="text1"><a href="https://www.hacervelas.es/hacer-velas-de-halloween/">Velas
-                                decorativas</a></div><?php echo $decoraciones["Velas"];?>
+                                decorativas</a></div><?php echo $decoraciones->Velas;?>
                     </div>
                     <div class="block2">
                         <img src="images/page5_img2.jpg" alt="" class="img_inner i1 ">
                         <div class="text1"><a
                                 href="https://www.hogarmania.com/decoracion/manualidades/otros/como-tallar-calabaza-21751.html">Linternas
-                                de Jack</a></div><?php echo $decoraciones["Linternas"];?>
+                                de Jack</a></div><?php echo $decoraciones->Linternas;?>
                     </div>
                     <div class="block2">
                         <img src="images/page5_img3.jpg" alt="" class="img_inner i1">
                         <div class="text1"><a
                                 href="https://papelisimo.es/2015/10/calabaza-de-papel-rellena-de-caramelos-halloween/">Calabaza
-                                rellena de caramelos</a></div><?php echo $decoraciones["Calabazas"];?>
+                                rellena de caramelos</a></div><?php echo $decoraciones->Calabazas;?>
                     </div>
                     <div class="clear"></div>
                     <div class="clear"></div>
