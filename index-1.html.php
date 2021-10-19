@@ -139,8 +139,8 @@ tenido gran aceptación sobre todo en las familias con niños pequeños.";
                         <!--==============================NAVEGATION BAR==============================-->
                         <nav class="">
                             <ul class="sf-menu">
-                                <li class="current"><a href="index.html.php"><?php echo $navB1;?></a></li>
-                                <li><a href="index-1.html.php"><?php echo $navB2;?></a></li>
+                                <li><a href="index.html.php"><?php echo $navB1;?></a></li>
+                                <li class="current"><a href="index-1.html.php"><?php echo $navB2;?></a></li>
                                 <li><a href="index-2.html.php"><?php echo $navB3;?></a></li>
                                 <li><a href="index-4.html.php"><?php echo $navB4;?></a></li>
                             </ul>
