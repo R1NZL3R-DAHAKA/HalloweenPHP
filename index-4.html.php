@@ -7,6 +7,42 @@ $navB2 = "Historia";
 $navB3 = "Recetas";
 $navB4 = "Decoraciones";
 
+#CLASE
+class Decoracion {
+    public $nombre;
+    public $descripcion;
+
+    function showNombre(){
+        echo $this->nombre;
+    }
+
+    function showDescripcion(){
+        echo $this->descripcion;
+    }
+}
+
+#OBJECTO
+$d1 = new Decoracion();
+$d1->nombre = "Velas Decorativas";
+$d1->descripcion = "Las velas Halloween son uno de los elementos decorativos más versátiles que hay y elaborarlas en casa te permite personalizarlas a
+tu gusto. Se pueden hacer en forma de calabaza, sangrientas, de calavera… ¡Hay multitud de
+opciones! Echa un vistazo a estas propuestas y no sabrás por cual decantarte.";
+
+$d2 = new Decoracion();
+$d2->nombre = "Linternas de Jack";
+$d2->descripcion = "Para elaborar esta manualidad necesitaremos una buena calabaza naranja
+y redondeada, espacio en la mesa y un buen cuchillo. Después, bastará con marcar el rostro y
+recortar según el esquema que tengamos dibujado.";
+
+$d3 = new Decoracion();
+$d3->nombre = "Calabazas rellena de caramelos";
+$d3->descripcion = "Coge una bandeja grande y coloca en ellas varias calabazas
+pequeñas. Pon también piñas y velas y ya tendrás un original centro de mesa perfecto para Halloween.";
+
+$d1->showNombre();
+$d1->showDescripcion();
+
+/* POO IMPERATIVO
   $decoraciones = (object)[
     "Velas" => "Las velas Halloween son uno de los
     elementos decorativos más versátiles que hay y elaborarlas en casa te permite personalizarlas a
@@ -19,7 +55,8 @@ $navB4 = "Decoraciones";
 
     "Calabazas"=>"Coge una bandeja grande y coloca en ellas varias calabazas
     pequeñas. Pon también piñas y velas y ya tendrás un original centro de mesa perfecto para Halloween.",
-  ];
+  ];*/
+
 ?>
 
 <head>
@@ -102,7 +139,7 @@ $navB4 = "Decoraciones";
                     <p id="demo"></p>
                     <script>
                     // Set the date we're counting down to
-                    var countDownDate = new Date("Oct 31, 2021 00:00:00").getTime();
+                    var countDownDate = new Date("Oct 31, 2022 00:00:00").getTime();
 
                     // Update the count down every 1 second
                     var x = setInterval(function() {
@@ -164,20 +201,17 @@ $navB4 = "Decoraciones";
                     <h3>Manualidades</h3>
                     <div class="block2">
                         <img src="images/page5_img1.jpg" alt="" class="img_inner i1">
-                        <div class="text1"><a href="https://www.hacervelas.es/hacer-velas-de-halloween/">Velas
-                                decorativas</a></div><?php echo $decoraciones->Velas;?>
+                        <div class="text1"><a href="https://www.hacervelas.es/hacer-velas-de-halloween/"><?php $d1->showNombre()?></a></div><?php $d1->showDescripcion()?>
                     </div>
                     <div class="block2">
                         <img src="images/page5_img2.jpg" alt="" class="img_inner i1 ">
                         <div class="text1"><a
-                                href="https://www.hogarmania.com/decoracion/manualidades/otros/como-tallar-calabaza-21751.html">Linternas
-                                de Jack</a></div><?php echo $decoraciones->Linternas;?>
+                                href="https://www.hogarmania.com/decoracion/manualidades/otros/como-tallar-calabaza-21751.html"><?php $d2->showNombre()?></a></div><?php $d2->showDescripcion()?>
                     </div>
                     <div class="block2">
                         <img src="images/page5_img3.jpg" alt="" class="img_inner i1">
                         <div class="text1"><a
-                                href="https://papelisimo.es/2015/10/calabaza-de-papel-rellena-de-caramelos-halloween/">Calabaza
-                                rellena de caramelos</a></div><?php echo $decoraciones->Calabazas;?>
+                                href="https://papelisimo.es/2015/10/calabaza-de-papel-rellena-de-caramelos-halloween/"><?php $d3->showNombre()?></a></div><?php $d3->showDescripcion()?>
                     </div>
                     <div class="clear"></div>
                     <div class="clear"></div>
